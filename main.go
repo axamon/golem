@@ -16,7 +16,7 @@ type Lemmatizer struct {
 	m map[string][]string
 }
 
-const folder = "data"
+const folder = "dataIT"
 
 // New produces a new Lemmatizer
 func New(locale string) (*Lemmatizer, error) {
@@ -38,7 +38,7 @@ func New(locale string) (*Lemmatizer, error) {
 	default:
 		return nil, fmt.Errorf(`Language "%s" is not implemented`, locale)
 	}
-	f, err := dicts.Asset(path.Join(folder, fname))
+	f, err := dicts.Asset(path.Join(folder+"/IT/", fname))
 	if err != nil {
 		return nil, fmt.Errorf(`Could not open resource file for "%s"`, locale)
 	}
