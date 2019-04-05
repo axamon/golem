@@ -26,7 +26,7 @@ var languages = []struct {
 	lemmatizer *golem.Lemmatizer
 }{
 	{"english", en},
-	{"italian", it},
+	//{"italian", it},
 	{"french", fr},
 	{"german", ge},
 	{"spanish", sp},
